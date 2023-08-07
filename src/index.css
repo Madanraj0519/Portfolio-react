@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,600;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fcf2e8;
+    padding-left: 30rem;
+}
+
+
+.navbar .link:hover{
+    letter-spacing: .2rem;
+    color: #fb923c;
+    cursor: pointer;
+}
+
+.follow a{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 .7rem;
+}
+
+.follow a:hover{
+    color: #fb923c;
+    transition:all .1s;
+
+}
+
+/* Home */
+
+section{
+    padding: 1rem 5%;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .content .info{
+    padding: .5rem 0;
+}
+
+.home .content .text{
+    padding: .5rem 0;
+}
+
+
+/* about */
+
+
+.about .row-1 .image{
+    flex: 1 1 25rem;
+}
+
+
+.about .row-1 .content{
+    flex: 1 1 55rem;
+}
+
+.about .row-1 .content .box-container .box{
+    flex:1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span{
+    color:#fb923c
+}
+
+.about .row-2 .skills{
+    flex: 1 1 40rem;
+}
+
+.about .row-2 .skills .progress h3{
+   display: flex;
+   justify-content: space-between;
+   padding: .7rem 0;
+   font-size: 1.7rem;
+   color: #111;
+   font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: #fb923c;
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 80%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 70%;
+}
+
+.about .row-2 .box-container{
+    flex: 1 1 40rem;
+}
+
+.about .row-2 .box-container .box{
+    flex: 1 1 15rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-2 .box-container .box h3{
+    color: #fb923c;
+    font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p{
+    color: #666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+
+/* experience */
+
+.experience  .box-container .box{
+    flex: 1 1 33rem;
+}
+
+
+
+
+/* portfolio */
+
+.portfolio .box-container .box{
+    flex: 1 1 30rem;
+}
+
+.portfolio .box-container .box img{
+    z-index: 1;
+}
+
+.portfolio .box-container .box:hover img{
+    height: 87%;
+    width: 87%;
+}
+
+.portfolio .box-container .box .icons a{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    color: #333;
+    font-size: 2rem;
+    padding: .9rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box .icons a:hover{
+    background: #fb923c;
+    color: #fff;
+    transform: scale(1.2);
+    transition-duration: 200ms;
+
+}
+
+
+/* contact */
+
+.contact .icons-container .icons{
+    flex: 1 1 25rem;
+}
+
+.contact .row form{
+    flex: 1 1 55rem;
+}
+
+.contact .row .map{
+    flex: 1 1 25rem;
+}
+
+.contact .row form .box,
+.contact .row form textarea{
+    width: 100%;
+    border-bottom: .1rem solid #333;
+    color: #333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: #fb923c;
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    body{
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
